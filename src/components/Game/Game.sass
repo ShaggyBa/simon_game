@@ -1,0 +1,99 @@
+.simon-game
+  min-height: 100vh
+  height: 100%
+  padding: 1rem
+  background: #14121F
+
+  h1
+    text-align: center
+    margin: 0
+    padding: 1rem 0 0 0
+    color: #E5484D
+
+  .buttons
+    display: grid
+    margin: 2rem auto 0 auto
+    grid-template-rows: 1fr 1fr
+    grid-template-columns: 1fr 1fr
+    gap: 1rem
+    max-width: 500px
+
+    user-select: none
+
+    button
+      padding: .3rem .5rem
+      border-radius: 5px
+      height: 300px
+
+      border: none
+
+      transition: box-shadow .3s ease-in-out
+
+
+    & > .blue
+      background: blue
+
+    & > .red
+      background: red
+
+    & > .yellow
+      background: yellow
+
+    & > .green
+      background: green
+
+
+  .player-ui
+    color: #fff
+    display: flex
+    margin: 1rem auto 1rem auto
+    max-width: 500px
+    justify-content: space-between
+    align-items: center
+
+    h2
+      margin-right: 1rem
+
+    button
+      padding: .3rem .5rem
+      cursor: pointer
+      background: #000
+      border-radius: 5px
+      border: none
+      font-size: 20px
+      color: #E5484D
+      outline: 1px solid #E5484D
+
+      transition: all .15s linear
+
+      &:hover:not(:disabled)
+        background: #E5484D
+        color: #000
+
+      &:disabled
+        cursor: not-allowed
+        opacity: .3
+
+    .game-stats
+      margin: 0 auto
+    .game-options
+      list-style: none
+      font-size: 18px
+
+      & li
+        margin: 1rem 0
+        padding: .3rem .5rem
+        text-align: center
+        cursor: pointer
+
+        &:hover
+          background: #E5484D
+        &.active
+          background: #E5484D
+
+
+
+  .game-over
+    font-size: 30px
+    color: #fff
+    text-align: center
