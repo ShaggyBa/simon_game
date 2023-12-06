@@ -1,4 +1,4 @@
-# frontdev_task2
+# Simon game written in a vue
 
 ## Project setup
 ```
